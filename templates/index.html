@@ -20,7 +20,7 @@
     <script src="/static/aframe.js"></script>
     <script src="/static/mindar-image-aframe.prod.js"></script>
     <link rel="stylesheet" type="text/css" href="/static/main.css" />
-    <script src="/static/main.js"></script>
+    <!-- script src="/static/main.js"></script -->
   </head>
   <body>
     <a-scene
@@ -29,57 +29,8 @@
       vr-mode-ui="enabled:false"
       device-orientation-permission-ui="enabled:false"
     >
-      <div id="header-container">
-        <div id="header">
-          <div class="dropdown">
-            <button
-              class="btn btn-success dropdown-toggle mx-auto"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <span class="fsize">Check your progress</span>
-            </button>
-            <ul class="dropdown-menu">
-              <li id="goalzero">Circulation Desk ❌</li>
-              <li id="goalone">Elevators ❌</li>
-              <li id="goaltwo">Lesiure Collection ❌</li>
-              <li id="goalthree">Photocopier ❌</li>
-              <li id="goalfour">Printer ❌</li>
-              <li id="goalfive">Reference Collection ❌</li>
-              <li id="goalsix">Reference Desk ❌</li>
-              <li id="goalseven">Study Rooms❌</li>
-            </ul>
-          </div>
-        </div>
-        <div id="startend-container">
-          <div id="starter" class="startend">
-            <p>Welcome to the Library's <strong>Scavenger Hunt</strong>!</p>
-            <p>Find the items listed under "Check your progress"</p>
-            <p>Finding the shapes will check them off your list!</p>
-            <button
-              type="button"
-              class="btn btn-success btn-lg"
-              id="startbutton"
-            >
-              Start!
-            </button>
-          </div>
-          <div id="ender" class="startend">
-            <p>
-              <strong>🎉 Congratulations! 🎉</strong> You've found all of the
-              items!
-            </p>
-            <p>
-              Show this screen to the librarians at the reference desk to claim
-              your prize!
-            </p>
-          </div>
-        </div>
-      </div>
-
       <a-camera position="0 0 0" look-controls="enabled:false"></a-camera>
-      <a-entity mindar-image-target="targetIndex:0" id="anchorzero">
+      <!-- a-entity mindar-image-target="targetIndex:0" id="anchorzero">
         <a-box
           position="0 0.5 0"
           material="color: red;"
@@ -113,7 +64,7 @@
           material="color: red;"
           animation="property: rotation; to: 360 360 0; loop: true; dur: 3000; easing: linear;"
         ></a-box>
-      </a-entity>
+      </a-entity -->
       <a-entity mindar-image-target="targetIndex:5" id="anchorfive">
         <a-box
           position="0 0.5 0"
@@ -121,7 +72,7 @@
           animation="property: rotation; to: 360 360 0; loop: true; dur: 3000; easing: linear;"
         ></a-box>
       </a-entity>
-      <a-entity mindar-image-target="targetIndex:6" id="anchorsix">
+      <!-- a-entity mindar-image-target="targetIndex:6" id="anchorsix">
         <a-box
           position="0 0.5 0"
           material="color: red;"
@@ -134,7 +85,7 @@
           material="color: red;"
           animation="property: rotation; to: 360 360 0; loop: true; dur: 3000; easing: linear;"
         ></a-box>
-      </a-entity>
+      </a-entity -->
     </a-scene>
   </body>
 </html>
